@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Host", "Proton.Host\Proton.Host.csproj", "{0FFD72EF-A2CC-4757-B66A-01E766A54E2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Models", "Proton.Models\Proton.Models.csproj", "{1336D839-BC8E-4BD1-B43E-5D7CA4B86262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Services", "Proton.Services\Proton.Services.csproj", "{16F2550B-DB1C-498E-A57C-AC02DBB94919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Repositories", "Proton.Repositories\Proton.Repositories.csproj", "{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FFD72EF-A2CC-4757-B66A-01E766A54E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFD72EF-A2CC-4757-B66A-01E766A54E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFD72EF-A2CC-4757-B66A-01E766A54E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFD72EF-A2CC-4757-B66A-01E766A54E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1336D839-BC8E-4BD1-B43E-5D7CA4B86262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1336D839-BC8E-4BD1-B43E-5D7CA4B86262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1336D839-BC8E-4BD1-B43E-5D7CA4B86262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1336D839-BC8E-4BD1-B43E-5D7CA4B86262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F2550B-DB1C-498E-A57C-AC02DBB94919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F2550B-DB1C-498E-A57C-AC02DBB94919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F2550B-DB1C-498E-A57C-AC02DBB94919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F2550B-DB1C-498E-A57C-AC02DBB94919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+@Proton.Host_HostAddress = http://localhost:5250
+
+GET {{Proton.Host_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
