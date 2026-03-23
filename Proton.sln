@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Services", "Proton.S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Repositories", "Proton.Repositories\Proton.Repositories.csproj", "{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proton.Common", "Proton.Common\Proton.Common.csproj", "{75845E91-2972-4CBE-A06F-7ACCBA160809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16A11C5E-3621-4CE2-B7CB-2248BA31A43E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75845E91-2972-4CBE-A06F-7ACCBA160809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75845E91-2972-4CBE-A06F-7ACCBA160809}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75845E91-2972-4CBE-A06F-7ACCBA160809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75845E91-2972-4CBE-A06F-7ACCBA160809}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -3,10 +3,10 @@ using Proton.Repositories;
 
 namespace Proton.Services;
 
-public interface IUsersService : IBaseService<int, UserModel> {}
+public interface IUsersService : IBaseService<long, UserModel> {}
 
 public class UsersService(IUsersRepository usersRepository) : 
-    BaseService<int, UserModel>(usersRepository), IUsersService
+    BaseService<long, UserModel>(usersRepository), IUsersService
 {
     
 }
