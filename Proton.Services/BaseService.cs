@@ -6,6 +6,8 @@ public interface IBaseService<in TKey, TModel>
 {
     Task<TModel> GetAsync(TKey id);
     Task<TModel> CreateAsync(TModel model);
+    Task<TModel> UpdateAsync(TKey id, TModel model);
+    Task DeleteAsync(TKey id);
 }
 
 public class BaseService<TKey, TModel>(IBaseRepository<TKey, TModel> repository) : 
@@ -13,4 +15,6 @@ public class BaseService<TKey, TModel>(IBaseRepository<TKey, TModel> repository)
 {
     public Task<TModel> GetAsync(TKey id) => repository.GetAsync(id);
     public Task<TModel> CreateAsync(TModel model) => repository.CreateAsync(model);
+    public Task<TModel> UpdateAsync(TKey id, TModel model) => repository.UpdateAsync(id, model);
+    public Task DeleteAsync(TKey id) => repository.DeleteAsync(id);
 }

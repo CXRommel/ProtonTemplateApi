@@ -11,7 +11,7 @@ namespace Proton.Repositories.Extensions;
 
 public static class ServiceRegistrationExtension
 {
-    public static void AddProtonRepositories(this IServiceCollection services, string? connectionString)
+    public static IServiceCollection AddProtonRepositories(this IServiceCollection services, string? connectionString)
     {
         services
             .Val()
@@ -29,6 +29,8 @@ public static class ServiceRegistrationExtension
 
 
         services.AddSingleton<IMapper<UserModel, UserEntity>, UserMapper>();
+
+        return services;
     } 
 }
 

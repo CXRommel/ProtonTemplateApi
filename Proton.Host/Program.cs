@@ -1,5 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
-using Proton.Services;
+using Proton.Host.Extensions;
 using Proton.Repositories.Extensions;
 using Proton.Services.Extensions;
 
@@ -11,8 +10,11 @@ string BuildConnectionString(string connectionString)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddProtonRepositories(connectionString: BuildConnectionString(builder.Configuration.GetConnectionString("Schools")));
-builder.Services.AddProtonServices();
+builder.Services
+    .AddProtonRepositories(
+        connectionString: BuildConnectionString(builder.Configuration.GetConnectionString("Schools")))
+    .AddProtonServices()
+    .AddProtonEndpointsService();
 
 var app = builder.Build();
 
@@ -24,14 +26,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
-app.MapGet("/users/{id:long}", (
-    [FromRoute] long id,
-    [FromServices] IUsersService userService) => userService.GetAsync(id))
-.WithName("GetUserById")
-.WithOpenApi();
-
-
-app.Run();
+app
+    .MapProtonRoutes()
+    .Run();
 
 

@@ -8,5 +8,4 @@ public interface IUsersService : IBaseService<long, UserModel> {}
 public class UsersService(IUsersRepository usersRepository) : 
     BaseService<long, UserModel>(usersRepository), IUsersService
 {
-    
 }

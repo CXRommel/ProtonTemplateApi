@@ -18,9 +18,4 @@
       <ProjectReference Include="..\Proton.Services\Proton.Services.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Endpoints\" />
-      <Folder Include="Routes\" />
-    </ItemGroup>
-
 </Project>

@@ -12,7 +12,8 @@ public class UserMapper : IMapper<UserModel, UserEntity>
              Id =  source.Id,
              FirstName = source.FirstName,
              LastName = source.LastName,
-             Email = source.Email
+             Email = source.Email,
+             ModifiedOn = source.ModifiedOn
          };
 
     public UserEntity Map(UserModel destination)
@@ -21,6 +22,8 @@ public class UserMapper : IMapper<UserModel, UserEntity>
              Id = destination.Id,
              FirstName = destination.FirstName,
              LastName = destination.LastName,
-             Email = destination.Email
+             Email = destination.Email,
+             ModifiedOn = destination.ModifiedOn,
+             CreatedOn = destination.CreatedOn
          };
 }
