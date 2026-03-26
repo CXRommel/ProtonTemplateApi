@@ -10,6 +10,13 @@ public static class UsersRoutes
     {
         var group = app.MapGroup("/" + prefix);
         
+        group.MapGet("", (
+                [FromQuery] string? where,
+                [FromServices] IUsersEndpoint endpoint) => endpoint.GetAllAsync(where))
+            .WithName("GetUsers")
+            .RequireAuthorization()
+            .WithOpenApi();
+        
         group.MapGet("/{id:long}", (
                 [FromRoute] long id,
                 [FromServices] IUsersEndpoint endpoint) => endpoint.GetAsync(id))
