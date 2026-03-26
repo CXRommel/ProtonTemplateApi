@@ -8,4 +8,7 @@ public class UserModel
     public string Email { get; set; } = string.Empty;
     public DateTime ModifiedOn { get; set; } = DateTime.UtcNow;
     public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
+
+
+    public ICollection<SchoolModel> Schools { get; set; }
 }
